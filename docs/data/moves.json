@@ -1,1 +1,17 @@
-{"total":0,"people":{},"log":[]}
+{
+ "total": 1,
+ "people": {
+  "Dangerousfish": {
+   "n": 1,
+   "at": 1793404446518
+  }
+ },
+ "log": [
+  {
+   "who": "Dangerousfish",
+   "what": "cheer",
+   "at": "2026-10-30T23:54:06.518Z"
+  }
+ ],
+ "cheer": 1
+}
