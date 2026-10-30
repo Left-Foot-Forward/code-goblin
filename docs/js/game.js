@@ -423,7 +423,7 @@ function guildHTML() {
     <div class="people">${H.members.map(m => `<div class="person"><span class="duo">${m.avatar ? `<img alt="" src="${esc(m.avatar)}&s=80" loading="lazy">` : ''}</span><span>@${esc(m.login)}<small>${m.merged} merged · ${m.reviews} reviews</small></span></div>`).join('')}</div>
     <div class="sec">Cheer the goblin on GitHub</div>
     <div class="cheer"><a class="btn" target="_blank" rel="noopener" href="${issueLink('feed')}">Feed</a><a class="btn" target="_blank" rel="noopener" href="${issueLink('pet')}">Pet</a><a class="btn solid" target="_blank" rel="noopener" href="${issueLink('cheer')}">Cheer</a></div>
-    <div class="log">${M.total ? `<span>${M.total} moves from ${Object.keys(M.people).length} people</span>` + M.log.slice(0, 6).map(l => `<span>@${esc(l.who)} ${esc(l.what === 'pet' ? 'petted' : l.what === 'feed' ? 'fed' : 'cheered')} the goblin · ${ago(l.at)}</span>`).join('') : '<span>No cheers yet. Be the first.</span>'}</div>`;
+    <div class="log">${M.total ? `<span>${M.total} move${M.total === 1 ? '' : 's'} from ${Object.keys(M.people).length} ${Object.keys(M.people).length === 1 ? 'person' : 'people'}</span>` + M.log.slice(0, 6).map(l => `<span>@${esc(l.who)} ${esc(l.what === 'pet' ? 'petted' : l.what === 'feed' ? 'fed' : 'cheered')} the goblin · ${ago(l.at)}</span>`).join('') : '<span>No cheers yet. Be the first.</span>'}</div>`;
 }
 
 /* ---------- toasts, badges ---------- */

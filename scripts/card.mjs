@@ -42,7 +42,8 @@ export function renderCard(hoard, moves, avatars = {}, theme = 'light', playUrl 
   const lastLine = !last ? 'The hoard is empty. Merge something tasty.'
     : last.sealed ? `Last devoured: a sealed scroll (+${fmt(last.additions)} −${fmt(last.deletions)})`
       : `Last devoured: “${clip(last.title, 46)}” by @${clip(last.author, 18)}`;
-  const cheers = moves?.total ? `cheered ${moves.total}× by ${Object.keys(moves.people || {}).length} people` : 'be the first to cheer';
+  const fans = Object.keys(moves?.people || {}).length;
+  const cheers = moves?.total ? `cheered ${moves.total}× by ${fans} ${fans === 1 ? 'person' : 'people'}` : 'be the first to cheer';
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(`${hoard.name}, the ${hoard.owner} code goblin, level ${hoard.level}. ${mo.merged} of ${mo.goal} merged pull requests this month.`)}">
 <style>${goblinCSS()}</style>

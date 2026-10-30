@@ -43,7 +43,8 @@ async function main() {
     writeFileSync(join(DATA, 'moves.json'), JSON.stringify(moves, null, 1) + '\n');
     const hoard = read('hoard.json', null);
     if (hoard) writeCards(hoard, moves, read('avatars.json', {}), repo);
-    reply = `${pick(REPLIES[what])}\n\n@${who} has cheered the goblin ${me.n}× · ${moves.total} moves from ${Object.keys(moves.people).length} people so far.`;
+    const people = Object.keys(moves.people).length;
+    reply = `${pick(REPLIES[what])}\n\n@${who} has cheered the goblin ${me.n}× · ${moves.total} move${moves.total === 1 ? '' : 's'} from ${people} ${people === 1 ? 'person' : 'people'} so far.`;
   }
   await rest('POST', `/repos/${repo}/issues/${number}/comments`, { body: reply });
   await rest('PATCH', `/repos/${repo}/issues/${number}`, { state: 'closed', state_reason: 'completed' });
