@@ -39,5 +39,5 @@ jobs:
           git add docs/data docs/card.svg docs/card-dark.svg
           git diff --cached --quiet && exit 0
           git commit -m "goblin: $MOVER made a move"
-          for i in 1 2 3; do git pull --rebase -X theirs && git push && exit 0; sleep 5; done
+          for i in 1 2 3; do git pull --rebase --autostash -X theirs && git push && exit 0; sleep 5; done
           exit 1
