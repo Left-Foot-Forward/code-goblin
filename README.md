@@ -4,7 +4,7 @@
 </picture>
 
 <!-- goblin:links -->
-**▶ Play the game** · Feed · Pet · Cheer (links appear after the first Feast run)
+**[▶ Play the game](https://left-foot-forward.github.io/code-goblin/)** · [Feed](https://github.com/Left-Foot-Forward/code-goblin/issues/new?title=goblin%3A%20feed&body=Submitting%20this%20issue%20tells%20the%20goblin.%20A%20bot%20will%20reply%20and%20close%20it.) · [Pet](https://github.com/Left-Foot-Forward/code-goblin/issues/new?title=goblin%3A%20pet&body=Submitting%20this%20issue%20tells%20the%20goblin.%20A%20bot%20will%20reply%20and%20close%20it.) · [Cheer](https://github.com/Left-Foot-Forward/code-goblin/issues/new?title=goblin%3A%20cheer&body=Submitting%20this%20issue%20tells%20the%20goblin.%20A%20bot%20will%20reply%20and%20close%20it.)
 <!-- /goblin:links -->
 
 # Hoard
