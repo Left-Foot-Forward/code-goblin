@@ -133,6 +133,6 @@
       <text x="40" y="28" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" fill="#232340" opacity=".6">up for grabs</text></g>
 <line x1="24" y1="303" x2="856" y2="303" stroke="#232340" stroke-width="1" opacity=".35"/>
 <text x="26" y="322" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#232340">The hoard is empty. Merge something tasty.</text>
-<text x="854" y="322" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#232340" opacity=".8">cheered 1× by 1 people · play ↗</text>
+<text x="854" y="322" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#232340" opacity=".8">cheered 1× by 1 person · play ↗</text>
 <rect width="880" height="340" filter="url(#clight-grain)" fill="#232340"/>
 </svg>
