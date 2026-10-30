@@ -1,0 +1,43 @@
+name: Goblin moves
+
+# Visitors play from the README: an issue titled "goblin: feed", "goblin: pet" or "goblin: cheer".
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: goblin-data
+  cancel-in-progress: false
+
+jobs:
+  move:
+    if: startsWith(github.event.issue.title, 'goblin:')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Apply the move
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          # Untrusted input stays in env vars; the script matches it against a fixed list.
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_USER: ${{ github.event.issue.user.login }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: node scripts/move.mjs
+      - name: Commit
+        env:
+          MOVER: ${{ github.event.issue.user.login }}
+        run: |
+          git config user.name "code-goblin[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data docs/card.svg docs/card-dark.svg
+          git diff --cached --quiet && exit 0
+          git commit -m "goblin: $MOVER made a move"
+          for i in 1 2 3; do git pull --rebase -X theirs && git push && exit 0; sleep 5; done
+          exit 1

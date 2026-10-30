@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hoard · the code goblin</title>
+<meta name="description" content="A clicker game fed by your organisation's merged pull requests.">
+<meta name="color-scheme" content="light dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/zine.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="mast">
+    <h1 data-t="Hoard">Hoard</h1>
+    <p class="dek" id="dek">Meet <em>Grub</em>, the code goblin. Every pull request your org merges is a meal.</p>
+    <div class="side">
+      <span class="kicker" id="issue">Issue no. 1</span>
+      <a class="btn" id="cheerTop" href="#" target="_blank" rel="noopener">Cheer on GitHub ↗</a>
+    </div>
+  </header>
+  <p class="demo" id="demo" hidden>Demo data. Run the <b>Feast</b> workflow in this repo to feed the goblin your org's real pull requests.</p>
+
+  <section class="org" aria-label="Organisation progress">
+    <span class="lvl" id="orgLvl">LEVEL 1</span>
+    <div class="goal"><span id="goalTxt">This month's feast</span><div class="bar" role="progressbar" aria-label="Monthly goal" id="goalBar"><i></i></div></div>
+    <div class="bonus"><b id="bonusN">×1.0</b>org bonus on everything</div>
+  </section>
+
+  <main>
+    <section class="stage" aria-label="The goblin">
+      <div class="count">
+        <div class="n" id="lines">0</div>
+        <div class="u"><span><b id="lps">0</b> lines/s</span><span><b id="perTap">1</b> per tap</span><span class="gold"><b id="gold">0</b> gold</span></div>
+      </div>
+      <div class="buffs" id="buffs"></div>
+      <div class="gob" id="gob" tabindex="0" role="button" aria-label="Tap the goblin to write code"></div>
+      <div class="build">
+        <div class="row"><span id="buildName">BUILD #1</span><span id="buildState">compiling…</span></div>
+        <div class="bar green"><i id="buildBar"></i></div>
+      </div>
+      <div class="tray" id="tray" aria-label="Scrolls ready to feed"></div>
+      <div class="conflict" id="conflict" hidden role="dialog" aria-label="Merge conflict">
+        <span class="kicker">Merge conflict</span>
+        <pre id="conflictCode"></pre>
+        <div class="opts">
+          <button class="btn" data-pick="ours">Keep ours</button>
+          <button class="btn" data-pick="theirs">Keep theirs</button>
+          <button class="btn solid" data-pick="both">Keep both</button>
+        </div>
+        <div class="tick" id="conflictTick"></div>
+      </div>
+    </section>
+
+    <section class="panel" aria-label="Shop and guild">
+      <nav class="tabs" id="tabs">
+        <button data-tab="crew" class="on">Crew<i class="dot"></i></button>
+        <button data-tab="upgrades">Upgrades<i class="dot"></i></button>
+        <button data-tab="feast">Feast<i class="dot"></i></button>
+        <button data-tab="guild">Guild<i class="dot"></i></button>
+        <button data-tab="vault">Vault<i class="dot"></i></button>
+        <button data-tab="badges">Badges<i class="dot"></i></button>
+      </nav>
+      <div class="buybar" id="buybar"><span>BUY</span><button data-amt="1" class="on">1</button><button data-amt="10">10</button><button data-amt="100">100</button><button data-amt="max">MAX</button></div>
+      <div class="content" id="content"></div>
+    </section>
+  </main>
+
+  <footer><span id="foot">Hoard · a goblin that eats merged pull requests</span><span><a href="#" id="srcLink" target="_blank" rel="noopener">Source</a> · <button id="sound" class="linklike" style="background:none;border:0;text-decoration:underline">Sound off</button></span></footer>
+</div>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<script type="module" src="js/game.js"></script>
+</body>
+</html>

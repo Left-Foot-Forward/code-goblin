@@ -1,0 +1,632 @@
+{
+ "owner": "demo-org",
+ "kind": "Organization",
+ "name": "Grub",
+ "generatedAt": "2026-10-30T23:46:29.382Z",
+ "windowDays": 90,
+ "demo": true,
+ "level": 25,
+ "levelProgress": 0.7386337537059617,
+ "mood": "happy",
+ "totals": {
+  "mergedAllTime": 612,
+  "merged": 138,
+  "additions": 41280,
+  "deletions": 42502,
+  "reviews": 128,
+  "contributors": 12,
+  "repos": 4,
+  "lastMergeAt": "2026-10-30T21:07:53.637Z"
+ },
+ "month": {
+  "key": "2026-10",
+  "label": "October",
+  "merged": 55,
+  "goal": 50,
+  "previous": 41
+ },
+ "weeks": [
+  {
+   "start": "2026-08-01",
+   "merged": 7,
+   "additions": 2638,
+   "deletions": 3073
+  },
+  {
+   "start": "2026-08-08",
+   "merged": 6,
+   "additions": 1271,
+   "deletions": 1708
+  },
+  {
+   "start": "2026-08-15",
+   "merged": 8,
+   "additions": 3339,
+   "deletions": 1646
+  },
+  {
+   "start": "2026-08-22",
+   "merged": 15,
+   "additions": 5183,
+   "deletions": 6709
+  },
+  {
+   "start": "2026-08-29",
+   "merged": 7,
+   "additions": 3259,
+   "deletions": 2893
+  },
+  {
+   "start": "2026-09-05",
+   "merged": 15,
+   "additions": 5431,
+   "deletions": 5922
+  },
+  {
+   "start": "2026-09-12",
+   "merged": 10,
+   "additions": 2288,
+   "deletions": 1803
+  },
+  {
+   "start": "2026-09-19",
+   "merged": 7,
+   "additions": 1597,
+   "deletions": 1738
+  },
+  {
+   "start": "2026-09-26",
+   "merged": 10,
+   "additions": 2612,
+   "deletions": 1946
+  },
+  {
+   "start": "2026-10-03",
+   "merged": 16,
+   "additions": 4889,
+   "deletions": 2300
+  },
+  {
+   "start": "2026-10-10",
+   "merged": 14,
+   "additions": 3614,
+   "deletions": 1517
+  },
+  {
+   "start": "2026-10-17",
+   "merged": 11,
+   "additions": 3176,
+   "deletions": 7892
+  },
+  {
+   "start": "2026-10-24",
+   "merged": 12,
+   "additions": 1983,
+   "deletions": 3355
+  }
+ ],
+ "shoutouts": {
+  "feeder": {
+   "login": "ada",
+   "avatar": null,
+   "n": 9
+  },
+  "cleanup": {
+   "login": "ada",
+   "avatar": null,
+   "n": 3403
+  },
+  "sage": {
+   "login": "margaret",
+   "avatar": null,
+   "n": 6
+  },
+  "fresh": []
+ },
+ "members": [
+  {
+   "login": "ada",
+   "avatar": null,
+   "merged": 22,
+   "additions": 5364,
+   "deletions": 4330,
+   "reviews": 6
+  },
+  {
+   "login": "yukihiro",
+   "avatar": null,
+   "merged": 11,
+   "additions": 3477,
+   "deletions": 2698,
+   "reviews": 10
+  },
+  {
+   "login": "grace",
+   "avatar": null,
+   "merged": 9,
+   "additions": 4161,
+   "deletions": 1883,
+   "reviews": 8
+  },
+  {
+   "login": "dennis",
+   "avatar": null,
+   "merged": 9,
+   "additions": 4086,
+   "deletions": 6054,
+   "reviews": 7
+  },
+  {
+   "login": "linus",
+   "avatar": null,
+   "merged": 9,
+   "additions": 1362,
+   "deletions": 2854,
+   "reviews": 6
+  },
+  {
+   "login": "guido",
+   "avatar": null,
+   "merged": 7,
+   "additions": 1866,
+   "deletions": 746,
+   "reviews": 8
+  },
+  {
+   "login": "barbara",
+   "avatar": null,
+   "merged": 7,
+   "additions": 2694,
+   "deletions": 3292,
+   "reviews": 8
+  },
+  {
+   "login": "margaret",
+   "avatar": null,
+   "merged": 5,
+   "additions": 2116,
+   "deletions": 732,
+   "reviews": 9
+  },
+  {
+   "login": "ken",
+   "avatar": null,
+   "merged": 5,
+   "additions": 389,
+   "deletions": 1259,
+   "reviews": 7
+  },
+  {
+   "login": "anders",
+   "avatar": null,
+   "merged": 5,
+   "additions": 488,
+   "deletions": 804,
+   "reviews": 6
+  },
+  {
+   "login": "tim",
+   "avatar": null,
+   "merged": 4,
+   "additions": 743,
+   "deletions": 589,
+   "reviews": 7
+  },
+  {
+   "login": "radia",
+   "avatar": null,
+   "merged": 4,
+   "additions": 1829,
+   "deletions": 2657,
+   "reviews": 7
+  }
+ ],
+ "feast": [
+  {
+   "id": "demo-43",
+   "title": "Typo in README",
+   "url": "https://github.com/",
+   "repo": "demo-org/docs",
+   "number": 1043,
+   "author": "ada",
+   "avatar": null,
+   "additions": 18,
+   "deletions": 24,
+   "mergedAt": "2026-10-30T21:07:53.637Z"
+  },
+  {
+   "id": "demo-51",
+   "title": "Speed up CI cache",
+   "url": "https://github.com/",
+   "repo": "demo-org/docs",
+   "number": 1051,
+   "author": "grace",
+   "avatar": null,
+   "additions": 450,
+   "deletions": 374,
+   "mergedAt": "2026-10-27T11:55:18.975Z"
+  },
+  {
+   "id": "demo-33",
+   "title": "Bump deps",
+   "url": "https://github.com/",
+   "repo": "demo-org/web",
+   "number": 1033,
+   "author": "ada",
+   "avatar": null,
+   "additions": 3,
+   "deletions": 322,
+   "mergedAt": "2026-10-27T05:18:08.834Z"
+  },
+  {
+   "id": "demo-102",
+   "title": "Kill the old admin panel",
+   "url": "https://github.com/",
+   "repo": "demo-org/infra",
+   "number": 1102,
+   "author": "yukihiro",
+   "avatar": null,
+   "additions": 4,
+   "deletions": 23,
+   "mergedAt": "2026-10-26T23:34:18.854Z"
+  },
+  {
+   "id": "demo-42",
+   "sealed": true,
+   "additions": 34,
+   "deletions": 1373,
+   "mergedAt": "2026-10-26T22:28:13.018Z"
+  },
+  {
+   "id": "demo-78",
+   "title": "Bump deps",
+   "url": "https://github.com/",
+   "repo": "demo-org/infra",
+   "number": 1078,
+   "author": "ada",
+   "avatar": null,
+   "additions": 96,
+   "deletions": 87,
+   "mergedAt": "2026-10-26T21:50:32.058Z"
+  },
+  {
+   "id": "demo-128",
+   "sealed": true,
+   "additions": 424,
+   "deletions": 372,
+   "mergedAt": "2026-10-26T21:36:03.535Z"
+  },
+  {
+   "id": "demo-133",
+   "title": "Typo in README",
+   "url": "https://github.com/",
+   "repo": "demo-org/web",
+   "number": 1133,
+   "author": "ada",
+   "avatar": null,
+   "additions": 32,
+   "deletions": 88,
+   "mergedAt": "2026-10-26T14:45:46.369Z"
+  },
+  {
+   "id": "demo-59",
+   "sealed": true,
+   "additions": 24,
+   "deletions": 192,
+   "mergedAt": "2026-10-25T22:23:47.268Z"
+  },
+  {
+   "id": "demo-72",
+   "sealed": true,
+   "additions": 608,
+   "deletions": 324,
+   "mergedAt": "2026-10-25T14:43:52.847Z"
+  },
+  {
+   "id": "demo-118",
+   "title": "Typo in README",
+   "url": "https://github.com/",
+   "repo": "demo-org/infra",
+   "number": 1118,
+   "author": "linus",
+   "avatar": null,
+   "additions": 8,
+   "deletions": 113,
+   "mergedAt": "2026-10-25T10:00:28.309Z"
+  },
+  {
+   "id": "demo-130",
+   "sealed": true,
+   "additions": 282,
+   "deletions": 63,
+   "mergedAt": "2026-10-24T03:17:31.505Z"
+  },
+  {
+   "id": "demo-49",
+   "title": "Rewrite onboarding copy",
+   "url": "https://github.com/",
+   "repo": "demo-org/web",
+   "number": 1049,
+   "author": "barbara",
+   "avatar": null,
+   "additions": 178,
+   "deletions": 1952,
+   "mergedAt": "2026-10-23T15:57:27.838Z"
+  },
+  {
+   "id": "demo-63",
+   "title": "Bump deps",
+   "url": "https://github.com/",
+   "repo": "demo-org/docs",
+   "number": 1063,
+   "author": "ada",
+   "avatar": null,
+   "additions": 32,
+   "deletions": 2335,
+   "mergedAt": "2026-10-22T23:09:57.057Z"
+  },
+  {
+   "id": "demo-135",
+   "title": "Fix flaky auth test",
+   "url": "https://github.com/",
+   "repo": "demo-org/docs",
+   "number": 1135,
+   "author": "dennis",
+   "avatar": null,
+   "additions": 759,
+   "deletions": 382,
+   "mergedAt": "2026-10-22T18:43:35.958Z"
+  },
+  {
+   "id": "demo-112",
+   "sealed": true,
+   "additions": 170,
+   "deletions": 208,
+   "mergedAt": "2026-10-22T03:12:29.539Z"
+  },
+  {
+   "id": "demo-14",
+   "title": "Add tracing to checkout",
+   "url": "https://github.com/",
+   "repo": "demo-org/infra",
+   "number": 1014,
+   "author": "linus",
+   "avatar": null,
+   "additions": 7,
+   "deletions": 6,
+   "mergedAt": "2026-10-22T01:53:13.409Z"
+  },
+  {
+   "id": "demo-77",
+   "title": "Add retry to webhook sender",
+   "url": "https://github.com/",
+   "repo": "demo-org/web",
+   "number": 1077,
+   "author": "radia",
+   "avatar": null,
+   "additions": 223,
+   "deletions": 1977,
+   "mergedAt": "2026-10-21T02:36:19.703Z"
+  },
+  {
+   "id": "demo-41",
+   "title": "Migrate cron to queues",
+   "url": "https://github.com/",
+   "repo": "demo-org/web",
+   "number": 1041,
+   "author": "ada",
+   "avatar": null,
+   "additions": 290,
+   "deletions": 60,
+   "mergedAt": "2026-10-20T21:58:15.729Z"
+  },
+  {
+   "id": "demo-48",
+   "sealed": true,
+   "additions": 161,
+   "deletions": 237,
+   "mergedAt": "2026-10-20T21:22:56.034Z"
+  },
+  {
+   "id": "demo-30",
+   "sealed": true,
+   "additions": 528,
+   "deletions": 361,
+   "mergedAt": "2026-10-20T08:50:44.054Z"
+  },
+  {
+   "id": "demo-107",
+   "title": "Add retry to webhook sender",
+   "url": "https://github.com/",
+   "repo": "demo-org/docs",
+   "number": 1107,
+   "author": "yukihiro",
+   "avatar": null,
+   "additions": 744,
+   "deletions": 301,
+   "mergedAt": "2026-10-18T21:38:55.778Z"
+  },
+  {
+   "id": "demo-52",
+   "title": "Dark mode for settings",
+   "url": "https://github.com/",
+   "repo": "demo-org/api",
+   "number": 1052,
+   "author": "ada",
+   "avatar": null,
+   "additions": 84,
+   "deletions": 73,
+   "mergedAt": "2026-10-18T10:00:10.252Z"
+  },
+  {
+   "id": "demo-95",
+   "sealed": true,
+   "additions": 643,
+   "deletions": 0,
+   "mergedAt": "2026-10-16T01:36:39.738Z"
+  },
+  {
+   "id": "demo-1",
+   "title": "Remove dead feature flags",
+   "url": "https://github.com/",
+   "repo": "demo-org/web",
+   "number": 1001,
+   "author": "guido",
+   "avatar": null,
+   "additions": 23,
+   "deletions": 3,
+   "mergedAt": "2026-10-16T00:38:22.608Z"
+  },
+  {
+   "id": "demo-18",
+   "title": "Bump deps",
+   "url": "https://github.com/",
+   "repo": "demo-org/infra",
+   "number": 1018,
+   "author": "yukihiro",
+   "avatar": null,
+   "additions": 215,
+   "deletions": 98,
+   "mergedAt": "2026-10-15T09:07:02.276Z"
+  },
+  {
+   "id": "demo-94",
+   "sealed": true,
+   "additions": 116,
+   "deletions": 57,
+   "mergedAt": "2026-10-15T04:38:51.075Z"
+  },
+  {
+   "id": "demo-31",
+   "sealed": true,
+   "additions": 32,
+   "deletions": 112,
+   "mergedAt": "2026-10-14T20:01:16.106Z"
+  },
+  {
+   "id": "demo-68",
+   "sealed": true,
+   "additions": 645,
+   "deletions": 26,
+   "mergedAt": "2026-10-14T01:02:44.084Z"
+  },
+  {
+   "id": "demo-66",
+   "title": "Speed up CI cache",
+   "url": "https://github.com/",
+   "repo": "demo-org/infra",
+   "number": 1066,
+   "author": "ken",
+   "avatar": null,
+   "additions": 5,
+   "deletions": 95,
+   "mergedAt": "2026-10-13T07:58:34.379Z"
+  },
+  {
+   "id": "demo-12",
+   "title": "Kill the old admin panel",
+   "url": "https://github.com/",
+   "repo": "demo-org/api",
+   "number": 1012,
+   "author": "yukihiro",
+   "avatar": null,
+   "additions": 348,
+   "deletions": 8,
+   "mergedAt": "2026-10-12T13:03:39.359Z"
+  },
+  {
+   "id": "demo-6",
+   "sealed": true,
+   "additions": 232,
+   "deletions": 262,
+   "mergedAt": "2026-10-12T09:11:40.195Z"
+  },
+  {
+   "id": "demo-99",
+   "title": "Split giant utils file",
+   "url": "https://github.com/",
+   "repo": "demo-org/docs",
+   "number": 1099,
+   "author": "anders",
+   "avatar": null,
+   "additions": 71,
+   "deletions": 26,
+   "mergedAt": "2026-10-12T03:57:48.406Z"
+  },
+  {
+   "id": "demo-117",
+   "sealed": true,
+   "additions": 499,
+   "deletions": 122,
+   "mergedAt": "2026-10-11T23:39:06.818Z"
+  },
+  {
+   "id": "demo-9",
+   "title": "Split giant utils file",
+   "url": "https://github.com/",
+   "repo": "demo-org/web",
+   "number": 1009,
+   "author": "ken",
+   "avatar": null,
+   "additions": 20,
+   "deletions": 306,
+   "mergedAt": "2026-10-10T20:22:00.735Z"
+  },
+  {
+   "id": "demo-90",
+   "sealed": true,
+   "additions": 28,
+   "deletions": 372,
+   "mergedAt": "2026-10-10T19:04:01.428Z"
+  },
+  {
+   "id": "demo-67",
+   "title": "Dark mode for settings",
+   "url": "https://github.com/",
+   "repo": "demo-org/docs",
+   "number": 1067,
+   "author": "guido",
+   "avatar": null,
+   "additions": 737,
+   "deletions": 30,
+   "mergedAt": "2026-10-10T02:51:51.430Z"
+  },
+  {
+   "id": "demo-64",
+   "title": "Rewrite onboarding copy",
+   "url": "https://github.com/",
+   "repo": "demo-org/api",
+   "number": 1064,
+   "author": "anders",
+   "avatar": null,
+   "additions": 59,
+   "deletions": 1,
+   "mergedAt": "2026-10-09T22:12:36.901Z"
+  },
+  {
+   "id": "demo-65",
+   "title": "Delete legacy billing module",
+   "url": "https://github.com/",
+   "repo": "demo-org/web",
+   "number": 1065,
+   "author": "dennis",
+   "avatar": null,
+   "additions": 98,
+   "deletions": 73,
+   "mergedAt": "2026-10-09T03:54:35.518Z"
+  },
+  {
+   "id": "demo-85",
+   "title": "Docs: explain rate limits",
+   "url": "https://github.com/",
+   "repo": "demo-org/web",
+   "number": 1085,
+   "author": "anders",
+   "avatar": null,
+   "additions": 10,
+   "deletions": 79,
+   "mergedAt": "2026-10-08T16:46:17.733Z"
+  }
+ ],
+ "repo": null
+}

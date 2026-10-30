@@ -1,0 +1,41 @@
+name: Feast
+
+# Gathers the org's merged PRs, updates the shared hoard and redraws the README card.
+on:
+  schedule:
+    - cron: "23 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [goblin.config.json, scripts/**, docs/js/goblin.js]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: goblin-data
+  cancel-in-progress: false
+
+jobs:
+  feast:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Feed the goblin
+        env:
+          # Optional: a read-only token in GOBLIN_TOKEN also counts private repos (titles stay sealed).
+          GOBLIN_TOKEN: ${{ secrets.GOBLIN_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/feast.mjs
+      - name: Commit the hoard
+        run: |
+          git config user.name "code-goblin[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data docs/card.svg docs/card-dark.svg
+          git diff --cached --quiet && exit 0
+          git commit -m "goblin: feast $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3; do git pull --rebase -X theirs && git push && exit 0; sleep 5; done
+          exit 1
