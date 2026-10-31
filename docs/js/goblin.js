@@ -2,8 +2,14 @@
 // so the Pages game and the Node card renderer share exactly the same art.
 
 export const THEMES = {
-  light: { paper: '#f3eee3', green: '#00a95c', pink: '#ff48b0', ink: '#232340', blend: 'multiply', grain: 0.22 },
-  dark:  { paper: '#16151d', green: '#19c27a', pink: '#ff5fbe', ink: '#f3eee3', blend: 'screen', grain: 0.12 }
+  // green/pink are the print inks used for illustration. The *Text and *Mark tokens are deeper
+  // where needed so text meets WCAG 4.5:1 and meaningful marks meet 3:1 (see scripts/contrast.mjs).
+  light: { paper: '#f3eee3', paper2: '#ebe4d6', green: '#00a95c', pink: '#ff48b0', ink: '#232340', muted: '#4e4d66',
+    greenText: '#006b3a', pinkText: '#b8186f', greenMark: '#008f4e', pinkMark: '#e0258f', greenFill: '#006b3a', onGreen: '#f3eee3',
+    blend: 'multiply', grain: 0.22 },
+  dark: { paper: '#16151d', paper2: '#1e1c28', green: '#19c27a', pink: '#ff5fbe', ink: '#f3eee3', muted: '#a6a3b8',
+    greenText: '#19c27a', pinkText: '#ff5fbe', greenMark: '#19c27a', pinkMark: '#ff5fbe', greenFill: '#19c27a', onGreen: '#16151d',
+    blend: 'screen', grain: 0.12 }
 };
 
 export const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);

@@ -8,25 +8,36 @@
 <meta name="color-scheme" content="light dark">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/zine.css">
 </head>
 <body>
+<a class="sr" href="#gob">Skip to the goblin</a>
 <div class="wrap">
   <header class="mast">
     <h1 data-t="Hoard">Hoard</h1>
     <p class="dek" id="dek">Meet <em>Grub</em>, the code goblin. Every pull request your org merges is a meal.</p>
     <div class="side">
       <span class="kicker" id="issue">Issue no. 1</span>
-      <a class="btn" id="cheerTop" href="#" target="_blank" rel="noopener">Cheer on GitHub ↗</a>
+      <a class="btn" id="cheerTop" href="#" target="_blank" rel="noopener">Cheer on GitHub <span aria-hidden="true">↗</span><span class="sr"> (opens GitHub)</span></a>
     </div>
   </header>
   <p class="demo" id="demo" hidden>Demo data. Run the <b>Feast</b> workflow in this repo to feed the goblin your org's real pull requests.</p>
 
+  <section class="howto" id="howto" aria-labelledby="howtoTitle">
+    <h2 class="sr" id="howtoTitle">How Hoard works</h2>
+    <ol>
+      <li><span class="num" aria-hidden="true">1</span><b>Your org ships.</b><span id="how1">Every pull request your org merges turns into a scroll here, a few hours later.</span></li>
+      <li><span class="num" aria-hidden="true">2</span><b>You feed the goblin.</b><span>Tap Grub to write code, hire a crew, and feed scrolls for big rewards. Deleted lines become gold.</span></li>
+      <li><span class="num" aria-hidden="true">3</span><b>Everyone grows together.</b><span>The more the whole org merges, the higher Grub's level and the bigger the bonus every player gets.</span></li>
+    </ol>
+    <button class="btn" id="howtoClose">Got it</button>
+  </section>
+
   <section class="org" aria-label="Organisation progress">
     <span class="lvl" id="orgLvl">LEVEL 1</span>
-    <div class="goal"><span id="goalTxt">This month's feast</span><div class="bar" role="progressbar" aria-label="Monthly goal" id="goalBar"><i></i></div></div>
-    <div class="bonus"><b id="bonusN">×1.0</b>org bonus on everything</div>
+    <div class="goal"><span id="goalTxt">This month's feast</span><div class="bar" role="progressbar" aria-labelledby="goalTxt" aria-valuemin="0" aria-valuemax="100" id="goalBar"><i></i></div></div>
+    <div class="bonus"><b id="bonusN">×1.0</b>org bonus on everything you earn<small id="bonusWhy"></small></div>
   </section>
 
   <main>
@@ -35,42 +46,46 @@
         <div class="n" id="lines">0</div>
         <div class="u"><span><b id="lps">0</b> lines/s</span><span><b id="perTap">1</b> per tap</span><span class="gold"><b id="gold">0</b> gold</span></div>
       </div>
-      <div class="buffs" id="buffs"></div>
-      <div class="gob" id="gob" tabindex="0" role="button" aria-label="Tap the goblin to write code"></div>
+      <button class="me-pill linkish" id="mePill" hidden></button>
+      <div class="buffs" id="buffs" aria-live="polite"></div>
+      <div class="gob" id="gob" tabindex="0" role="button" aria-label="Grub the goblin. Press Space or Enter to write code."></div>
+      <p class="hint" id="hint" aria-hidden="true">Tap Grub to write code</p>
       <div class="build">
         <div class="row"><span id="buildName">BUILD #1</span><span id="buildState">compiling…</span></div>
-        <div class="bar green"><i id="buildBar"></i></div>
+        <div class="bar green" role="progressbar" aria-labelledby="buildName" aria-valuemin="0" aria-valuemax="100" id="buildBarWrap"><i id="buildBar"></i></div>
       </div>
-      <div class="tray" id="tray" aria-label="Scrolls ready to feed"></div>
-      <div class="conflict" id="conflict" hidden role="dialog" aria-label="Merge conflict">
-        <span class="kicker">Merge conflict</span>
+      <div class="tray" id="tray" role="group" aria-label="Scrolls ready to feed"></div>
+      <div class="conflict" id="conflict" hidden role="dialog" aria-labelledby="conflictTitle">
+        <span class="kicker" id="conflictTitle">Merge conflict!</span>
+        <p>Pick a side for a reward. Esc to walk away.</p>
         <pre id="conflictCode"></pre>
         <div class="opts">
-          <button class="btn" data-pick="ours">Keep ours</button>
-          <button class="btn" data-pick="theirs">Keep theirs</button>
-          <button class="btn solid" data-pick="both">Keep both</button>
+          <button class="btn" data-pick="ours">Keep ours · 7× lines/s</button>
+          <button class="btn" data-pick="theirs">Keep theirs · 25× taps</button>
+          <button class="btn solid" data-pick="both">Keep both · lines + gold</button>
         </div>
         <div class="tick" id="conflictTick"></div>
       </div>
     </section>
 
     <section class="panel" aria-label="Shop and guild">
-      <nav class="tabs" id="tabs">
-        <button data-tab="crew" class="on">Crew<i class="dot"></i></button>
-        <button data-tab="upgrades">Upgrades<i class="dot"></i></button>
-        <button data-tab="feast">Feast<i class="dot"></i></button>
-        <button data-tab="guild">Guild<i class="dot"></i></button>
-        <button data-tab="vault">Vault<i class="dot"></i></button>
-        <button data-tab="badges">Badges<i class="dot"></i></button>
-      </nav>
-      <div class="buybar" id="buybar"><span>BUY</span><button data-amt="1" class="on">1</button><button data-amt="10">10</button><button data-amt="100">100</button><button data-amt="max">MAX</button></div>
-      <div class="content" id="content"></div>
+      <div class="tabs" id="tabs" role="tablist" aria-label="Panels">
+        <button role="tab" id="tab-crew" data-tab="crew" aria-controls="content">Crew<i class="dot"></i></button>
+        <button role="tab" id="tab-upgrades" data-tab="upgrades" aria-controls="content">Upgrades<i class="dot"></i></button>
+        <button role="tab" id="tab-feast" data-tab="feast" aria-controls="content">Feast<i class="dot"></i></button>
+        <button role="tab" id="tab-guild" data-tab="guild" aria-controls="content">Guild<i class="dot"></i></button>
+        <button role="tab" id="tab-vault" data-tab="vault" aria-controls="content">Vault<i class="dot"></i></button>
+        <button role="tab" id="tab-badges" data-tab="badges" aria-controls="content">Badges<i class="dot"></i></button>
+      </div>
+      <div class="buybar" id="buybar" role="group" aria-label="How many to hire"><span aria-hidden="true">HIRE</span><button data-amt="1">1</button><button data-amt="10">10</button><button data-amt="100">100</button><button data-amt="max">MAX</button></div>
+      <div class="content" id="content" role="tabpanel" tabindex="0"></div>
     </section>
   </main>
 
-  <footer><span id="foot">Hoard · a goblin that eats merged pull requests</span><span><a href="#" id="srcLink" target="_blank" rel="noopener">Source</a> · <button id="sound" class="linklike" style="background:none;border:0;text-decoration:underline">Sound off</button></span></footer>
+  <footer><span id="foot">Hoard · a goblin that eats merged pull requests</span>
+    <span><button class="linkish" id="howtoOpen">How it works</button> · <a href="#" id="srcLink" target="_blank" rel="noopener">Source</a> · <button class="linkish" id="sound" aria-pressed="false">Sound</button></span></footer>
 </div>
-<div class="toasts" id="toasts" aria-live="polite"></div>
+<div class="toasts" id="toasts" role="status" aria-live="polite"></div>
 <script type="module" src="js/game.js"></script>
 </body>
 </html>

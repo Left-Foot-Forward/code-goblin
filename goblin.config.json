@@ -3,5 +3,6 @@
   "name": "Grub",
   "windowDays": 90,
   "repos": [],
+  "teams": {},
   "showPrivateTitles": false
 }

@@ -1,10 +1,10 @@
+<!-- goblin:links -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/card-dark.svg">
-  <img alt="Hoard: the org's code goblin, its level, this month's goal and shout-outs" src="docs/card.svg" width="100%">
+  <img alt="The org's code goblin: its level, this month's merge goal and shout-outs. Updates after the first Feast run." src="docs/card.svg" width="100%">
 </picture>
 
-<!-- goblin:links -->
-**[▶ Play the game](https://left-foot-forward.github.io/code-goblin/)** · [Feed](https://github.com/Left-Foot-Forward/code-goblin/issues/new?title=goblin%3A%20feed&body=Submitting%20this%20issue%20tells%20the%20goblin.%20A%20bot%20will%20reply%20and%20close%20it.) · [Pet](https://github.com/Left-Foot-Forward/code-goblin/issues/new?title=goblin%3A%20pet&body=Submitting%20this%20issue%20tells%20the%20goblin.%20A%20bot%20will%20reply%20and%20close%20it.) · [Cheer](https://github.com/Left-Foot-Forward/code-goblin/issues/new?title=goblin%3A%20cheer&body=Submitting%20this%20issue%20tells%20the%20goblin.%20A%20bot%20will%20reply%20and%20close%20it.)
+**▶ Play the game** · Feed · Pet · Cheer (links appear after the first Feast run)
 <!-- /goblin:links -->
 
 # Hoard
@@ -25,6 +25,8 @@ It lives entirely on GitHub:
 - **Deleted lines are the best flavour.** Deletions mint gold, which buys permanent relics. Cleaning up is rewarded, not just adding.
 - **The team sets the pace.** The org's level comes from all-time merged PRs, and each month has a feast goal (110% of last month). The org's level and goal progress multiply everything every player earns.
 - **People get shout-outs, not rankings.** Top feeder, cleanup hero, review sage and fresh faces making their first merge. Bots and AI reviewers count toward the totals but never take a shout-out.
+- **You can find yourself.** Pick your GitHub name in the Guild to see what you cooked this month, your weekly streak and badges earned by your real pull requests and reviews. Your own pull requests are worth triple when you feed them.
+- **Teams cook together.** Each public repo counts as a team, or define your own in `goblin.config.json`. The busiest team each month is team of the month.
 
 In the game you tap the goblin to write code, hire a crew (a linter imp, a rubber duck, an intern, a legacy dragon…), pass builds, survive flaky tests, resolve surprise merge conflicts and eventually squash and merge your history for permanent bonuses. Personal progress saves in your browser. The org's hoard is shared.
 
@@ -49,6 +51,11 @@ Settings live in [`goblin.config.json`](goblin.config.json):
 | `windowDays` | `90` | How far back the feast looks for scrolls and shout-outs |
 | `repos` | all | Limit to some repos, e.g. `["api", "web"]` |
 | `showPrivateTitles` | `false` | Leave this off unless the game is private too |
+| `teams` | each public repo | Name your teams, e.g. `{"Platform": ["api", "infra"], "Web": ["web"]}` |
+
+## Accessibility
+
+Text and meaningful marks meet WCAG AA contrast in both light and dark themes (`node scripts/contrast.mjs` checks every pairing). The game works by keyboard (Tab, arrow keys between panels, Space or Enter to tap the goblin), respects reduced motion and high-contrast preferences, and has a *Relaxed timers* setting so nothing ever times out. The README card has a written description that updates with the stats.
 
 ## Privacy
 
