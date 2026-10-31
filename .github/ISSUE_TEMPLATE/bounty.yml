@@ -1,0 +1,34 @@
+name: Post a bounty
+description: Put gold on an issue. Whoever's merged pull request closes it gets the gold.
+title: "goblin: bounty"
+labels: [goblin]
+body:
+  - type: markdown
+    attributes:
+      value: If the issue is closed as not planned, or is still open when the bounty expires, the gold comes back to you. Your note is public.
+  - type: input
+    id: repo
+    attributes:
+      label: Repository
+      description: The repo the issue lives in (just its name), or paste the issue's URL
+      placeholder: "web"
+    validations:
+      required: true
+  - type: input
+    id: number
+    attributes:
+      label: Issue number
+      placeholder: "512"
+  - type: input
+    id: gold
+    attributes:
+      label: Gold
+      description: A whole number, up to 500
+      placeholder: "20"
+    validations:
+      required: true
+  - type: textarea
+    id: note
+    attributes:
+      label: Note
+      description: Why this one matters. Public.

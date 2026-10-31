@@ -1,8 +1,21 @@
 {
   "org": "",
   "name": "Grub",
-  "windowDays": 90,
-  "repos": [],
+  "spenders": "members",
+  "creditPrivateWork": false,
+  "allowPrivateBounties": false,
+  "maxTransfer": 100,
+  "thanksPerDay": 5,
+  "bountyExpiryDays": 60,
+  "backfillDays": 30,
   "teams": {},
-  "showPrivateTitles": false
+  "rewards": {
+    "merge": { "scrolls": 1, "gold": 5, "sizeGoldMax": 5, "deleteGoldMax": 8 },
+    "review": { "decisive": 3, "comment": 1 },
+    "comment": { "gold": 1, "perDay": 10, "perThread": 3 },
+    "issueClosed": { "scrolls": 1, "gold": 4 },
+    "newRepo": { "treasury": 20 }
+  },
+  "quests": { "scale": 1 },
+  "roomCostScale": 1
 }

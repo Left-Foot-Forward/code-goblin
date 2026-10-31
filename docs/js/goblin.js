@@ -162,3 +162,36 @@ ${scope} .g-halo{transform-box:fill-box;transform-origin:50% 50%;animation:g-spi
 @keyframes g-spin{to{transform:rotate(360deg)}}
 @media (prefers-reduced-motion:reduce){${scope} *{animation:none!important}}`;
 }
+
+// The Den: rooms drawn around the goblin in the same 240×250 space. Unbuilt rooms are faint
+// dashed outlines, so everyone can see what the team is building toward.
+export const DEN_ROOMS = ['library', 'tavern', 'forge', 'observatory', 'hall'];
+export function den({ p = 'gob', theme = 'light', built = [] } = {}) {
+  const t = THEMES[theme], B = `style="mix-blend-mode:${t.blend}"`;
+  const ghost = `fill="none" stroke="${t.ink}" stroke-width="1.2" stroke-dasharray="3 3" opacity=".4"`;
+  const line = `stroke="${t.ink}" stroke-width="1.4" fill="none"`;
+  const art = {
+    library: on => `<g transform="translate(2 122)">${on
+      ? `<rect width="34" height="70" fill="url(#${p}-dg2)" ${B}/><rect width="34" height="70" ${line}/>
+         ${[22, 44].map(y => `<path d="M0 ${y}h34" ${line}/>`).join('')}
+         ${[[3, 4, 5, 17], [9, 2, 4, 19], [14, 6, 6, 15], [22, 3, 5, 18], [4, 26, 6, 17], [12, 28, 4, 15], [18, 25, 6, 18], [6, 48, 5, 19], [13, 50, 6, 17], [21, 47, 5, 20]]
+           .map(([x, y, w, h], i) => `<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="${i % 3 ? t.pink : t.ink}" ${i % 3 ? B : ''}/>`).join('')}`
+      : `<rect width="34" height="70" ${ghost}/><path d="M0 22h34M0 44h34" ${ghost}/>`}</g>`,
+    tavern: on => `<g transform="translate(204 140)">${on
+      ? `<path d="M2 8 h24 v30 a4 4 0 0 1 -4 4 h-16 a4 4 0 0 1 -4 -4 z" fill="${t.pink}" ${B}/><path d="M2 8 h24 v30 a4 4 0 0 1 -4 4 h-16 a4 4 0 0 1 -4 -4 z" ${line}/>
+         <path d="M26 14 h5 a5 5 0 0 1 0 14 h-5" ${line}/><path d="M0 9 q4 -9 9 -3 q4 -7 9 0 q5 -6 10 2" fill="${t.paper}" ${line}/>`
+      : `<path d="M2 8 h24 v34 h-24 z M26 14 h5 a5 5 0 0 1 0 14 h-5" ${ghost}/>`}</g>`,
+    forge: on => `<g transform="translate(0 206)">${on
+      ? `<path d="M2 6 h34 c0 6 -8 8 -12 9 v9 h8 v6 h-26 v-6 h8 v-9 c-6 -1 -12 -3 -12 -9 z" fill="${t.ink}"/>
+         <circle cx="30" cy="0" r="1.6" fill="${t.pink}"/><circle cx="36" cy="-4" r="1.2" fill="${t.pink}"/><circle cx="26" cy="-5" r="1" fill="${t.pink}"/>`
+      : `<path d="M2 6 h34 c0 6 -8 8 -12 9 v9 h8 v6 h-26 v-6 h8 v-9 c-6 -1 -12 -3 -12 -9 z" ${ghost}/>`}</g>`,
+    observatory: on => `<g transform="translate(196 4)">${on
+      ? `<path d="M4 30 L32 12 L36 19 L8 37 Z" fill="url(#${p}-dg)" ${B}/><path d="M4 30 L32 12 L36 19 L8 37 Z" ${line}/>
+         <path d="M18 28 l-8 16 M18 28 l2 17 M18 28 l10 15" ${line}/><circle cx="38" cy="4" r="1.6" fill="${t.pink}"/><circle cx="28" cy="2" r="1" fill="${t.ink}"/>`
+      : `<path d="M4 30 L32 12 L36 19 L8 37 Z M18 28 l-8 16 M18 28 l10 15" ${ghost}/>`}</g>`,
+    hall: on => `<g transform="translate(6 2)">${on
+      ? `<path d="M6 4 h22 v8 a11 11 0 0 1 -22 0 z" fill="url(#${p}-dp)" ${B}/><path d="M6 4 h22 v8 a11 11 0 0 1 -22 0 z M6 7 h-4 a4 4 0 0 0 4 8 M28 7 h4 a4 4 0 0 1 -4 8 M17 23 v7 M10 34 h14 v-4 h-14 z" ${line}/>`
+      : `<path d="M6 4 h22 v8 a11 11 0 0 1 -22 0 z M17 23 v7 M10 34 h14 v-4 h-14 z" ${ghost}/>`}</g>`
+  };
+  return `<g class="g-den">${DEN_ROOMS.map(id => art[id](built.includes(id))).join('')}</g>`;
+}

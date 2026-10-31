@@ -1,0 +1,26 @@
+name: Fund a room
+description: Put scrolls and gold toward the next room in the goblin's Den. The treasury matches what you give.
+title: "goblin: fund"
+labels: [goblin]
+body:
+  - type: markdown
+    attributes:
+      value: "Rooms unlock real features. Library: weekly quests. Tavern: the treasury tops up thanks. Forge: team banners. Observatory: a monthly retrospective issue. Hall of Fame: monthly plaques in the README."
+  - type: input
+    id: room
+    attributes:
+      label: Room
+      description: Library, Tavern, Forge, Observatory or Hall of Fame
+      placeholder: "Library"
+    validations:
+      required: true
+  - type: input
+    id: scrolls
+    attributes:
+      label: Scrolls
+      placeholder: "5"
+  - type: input
+    id: gold
+    attributes:
+      label: Gold
+      placeholder: "20"

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="880" height="340" viewBox="0 0 880 340" role="img" aria-label="Grub, the Left-Foot-Forward code goblin, is level 1. October: 0 of 10 merged pull requests. This week: 0 merged. Cheered once.">
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="340" viewBox="0 0 880 340" role="img" aria-label="Grub, the demo-org code goblin, is level 9 with 78 scrolls hoarded and 303 gold in the treasury. The team is building the Tavern: 6 of 15 scrolls and 24 of 120 gold. October so far: 65 merged, 126 reviews, 13 issues resolved. Shout-outs: top merger ada, top reviewer ken, most thanked grace.">
 <style>
  .g-figure{transform-box:fill-box;transform-origin:50% 100%;animation:g-breathe 3.6s ease-in-out infinite}
  .g-ear-l{transform-box:fill-box;transform-origin:100% 60%;animation:g-twitch 7s ease-in-out infinite}
@@ -32,27 +32,75 @@
 <rect width="880" height="340" fill="#16151d"/>
 <rect x="9" y="9" width="862" height="322" fill="none" stroke="#ff5fbe" stroke-width="2" style="mix-blend-mode:screen"/>
 <rect x="7" y="7.5" width="862" height="322" fill="none" stroke="#f3eee3" stroke-width="1.5"/>
-<circle cx="150" cy="190" r="120" fill="url(#cdark-dp)" opacity=".35" style="mix-blend-mode:screen"/>
-<g transform="translate(16 16) scale(1.12)"><g class="goblin mood-shock"><g class="g-hoard"><g transform="translate(91.8 227.4)">
-        <ellipse rx="6.5" ry="4.2" fill="url(#cdark-dg2)" stroke="#f3eee3" stroke-width="1"/>
-        <path d="M-2.4 0h4.8" stroke="#f3eee3" stroke-width="1"/></g><g transform="translate(103.6 217.1)">
-        <ellipse rx="6.5" ry="4.2" fill="url(#cdark-dg2)" stroke="#f3eee3" stroke-width="1"/>
-        <path d="M-2.4 0h4.8" stroke="#f3eee3" stroke-width="1"/></g><g transform="translate(146.6 222.9)">
-        <ellipse rx="6.5" ry="4.2" fill="url(#cdark-dg2)" stroke="#f3eee3" stroke-width="1"/>
-        <path d="M-2.4 0h4.8" stroke="#f3eee3" stroke-width="1"/></g><g transform="translate(105.1 227.6)">
-        <ellipse rx="6.5" ry="4.2" fill="url(#cdark-dg2)" stroke="#f3eee3" stroke-width="1"/>
-        <path d="M-2.4 0h4.8" stroke="#f3eee3" stroke-width="1"/></g><g transform="translate(126.4 226.3)">
-        <ellipse rx="6.5" ry="4.2" fill="url(#cdark-dg2)" stroke="#f3eee3" stroke-width="1"/>
-        <path d="M-2.4 0h4.8" stroke="#f3eee3" stroke-width="1"/></g><g transform="translate(94.3 235.0)">
-        <ellipse rx="6.5" ry="4.2" fill="url(#cdark-dg2)" stroke="#f3eee3" stroke-width="1"/>
-        <path d="M-2.4 0h4.8" stroke="#f3eee3" stroke-width="1"/></g><g transform="translate(92.6 229.7) rotate(2)">
+<circle cx="150" cy="190" r="120" fill="url(#cdark-dp)" opacity=".3" style="mix-blend-mode:screen"/>
+<g transform="translate(16 16) scale(1.12)"><g class="g-den"><g transform="translate(2 122)"><rect width="34" height="70" fill="url(#cdark-dg2)" style="mix-blend-mode:screen"/><rect width="34" height="70" stroke="#f3eee3" stroke-width="1.4" fill="none"/>
+         <path d="M0 22h34" stroke="#f3eee3" stroke-width="1.4" fill="none"/><path d="M0 44h34" stroke="#f3eee3" stroke-width="1.4" fill="none"/>
+         <rect x="3" y="4" width="5" height="17" fill="#f3eee3" /><rect x="9" y="2" width="4" height="19" fill="#ff5fbe" style="mix-blend-mode:screen"/><rect x="14" y="6" width="6" height="15" fill="#ff5fbe" style="mix-blend-mode:screen"/><rect x="22" y="3" width="5" height="18" fill="#f3eee3" /><rect x="4" y="26" width="6" height="17" fill="#ff5fbe" style="mix-blend-mode:screen"/><rect x="12" y="28" width="4" height="15" fill="#ff5fbe" style="mix-blend-mode:screen"/><rect x="18" y="25" width="6" height="18" fill="#f3eee3" /><rect x="6" y="48" width="5" height="19" fill="#ff5fbe" style="mix-blend-mode:screen"/><rect x="13" y="50" width="6" height="17" fill="#ff5fbe" style="mix-blend-mode:screen"/><rect x="21" y="47" width="5" height="20" fill="#f3eee3" /></g><g transform="translate(204 140)"><path d="M2 8 h24 v34 h-24 z M26 14 h5 a5 5 0 0 1 0 14 h-5" fill="none" stroke="#f3eee3" stroke-width="1.2" stroke-dasharray="3 3" opacity=".4"/></g><g transform="translate(0 206)"><path d="M2 6 h34 c0 6 -8 8 -12 9 v9 h8 v6 h-26 v-6 h8 v-9 c-6 -1 -12 -3 -12 -9 z" fill="none" stroke="#f3eee3" stroke-width="1.2" stroke-dasharray="3 3" opacity=".4"/></g><g transform="translate(196 4)"><path d="M4 30 L32 12 L36 19 L8 37 Z M18 28 l-8 16 M18 28 l10 15" fill="none" stroke="#f3eee3" stroke-width="1.2" stroke-dasharray="3 3" opacity=".4"/></g><g transform="translate(6 2)"><path d="M6 4 h22 v8 a11 11 0 0 1 -22 0 z M17 23 v7 M10 34 h14 v-4 h-14 z" fill="none" stroke="#f3eee3" stroke-width="1.2" stroke-dasharray="3 3" opacity=".4"/></g></g><g class="goblin mood-happy"><g class="g-hoard"><g transform="translate(183.6 233.3) rotate(0)">
         <rect x="-11" y="-4" width="22" height="8" rx="4" fill="#16151d" stroke="#f3eee3" stroke-width="1.1"/>
         <path d="M-6 -1.5h9M-6 1.5h6" stroke="#f3eee3" stroke-width=".7" opacity=".7"/>
-        <rect x="4" y="-4.5" width="2.4" height="9" fill="#ff5fbe" style="mix-blend-mode:screen"/></g><g transform="translate(115.1 223.0)">
+        <rect x="4" y="-4.5" width="2.4" height="9" fill="#ff5fbe" style="mix-blend-mode:screen"/></g><g transform="translate(83.1 225.6)">
         <ellipse rx="6.5" ry="4.2" fill="url(#cdark-dg2)" stroke="#f3eee3" stroke-width="1"/>
-        <path d="M-2.4 0h4.8" stroke="#f3eee3" stroke-width="1"/></g><g transform="translate(103.0 226.9)">
+        <path d="M-2.4 0h4.8" stroke="#f3eee3" stroke-width="1"/></g><g transform="translate(55.7 209.2) rotate(27)">
+        <rect x="-11" y="-4" width="22" height="8" rx="4" fill="#16151d" stroke="#f3eee3" stroke-width="1.1"/>
+        <path d="M-6 -1.5h9M-6 1.5h6" stroke="#f3eee3" stroke-width=".7" opacity=".7"/>
+        <rect x="4" y="-4.5" width="2.4" height="9" fill="#ff5fbe" style="mix-blend-mode:screen"/></g><g transform="translate(156.5 205.3) rotate(2)">
+        <rect x="-11" y="-4" width="22" height="8" rx="4" fill="#16151d" stroke="#f3eee3" stroke-width="1.1"/>
+        <path d="M-6 -1.5h9M-6 1.5h6" stroke="#f3eee3" stroke-width=".7" opacity=".7"/>
+        <rect x="4" y="-4.5" width="2.4" height="9" fill="#ff5fbe" style="mix-blend-mode:screen"/></g><g transform="translate(163.7 206.1) rotate(3)">
+        <rect x="-11" y="-4" width="22" height="8" rx="4" fill="#16151d" stroke="#f3eee3" stroke-width="1.1"/>
+        <path d="M-6 -1.5h9M-6 1.5h6" stroke="#f3eee3" stroke-width=".7" opacity=".7"/>
+        <rect x="4" y="-4.5" width="2.4" height="9" fill="#ff5fbe" style="mix-blend-mode:screen"/></g><g transform="translate(78.0 232.1)">
         <ellipse rx="6.5" ry="4.2" fill="url(#cdark-dg2)" stroke="#f3eee3" stroke-width="1"/>
-        <path d="M-2.4 0h4.8" stroke="#f3eee3" stroke-width="1"/></g><g transform="translate(119.3 227.3)">
+        <path d="M-2.4 0h4.8" stroke="#f3eee3" stroke-width="1"/></g><g transform="translate(59.2 204.3)">
+        <ellipse rx="6.5" ry="4.2" fill="url(#cdark-dg2)" stroke="#f3eee3" stroke-width="1"/>
+        <path d="M-2.4 0h4.8" stroke="#f3eee3" stroke-width="1"/></g><g transform="translate(142.3 227.5)">
+        <ellipse rx="6.5" ry="4.2" fill="url(#cdark-dg2)" stroke="#f3eee3" stroke-width="1"/>
+        <path d="M-2.4 0h4.8" stroke="#f3eee3" stroke-width="1"/></g><g transform="translate(79.8 236.1)">
+        <ellipse rx="6.5" ry="4.2" fill="url(#cdark-dg2)" stroke="#f3eee3" stroke-width="1"/>
+        <path d="M-2.4 0h4.8" stroke="#f3eee3" stroke-width="1"/></g><g transform="translate(161.0 213.9)">
+        <ellipse rx="6.5" ry="4.2" fill="url(#cdark-dg2)" stroke="#f3eee3" stroke-width="1"/>
+        <path d="M-2.4 0h4.8" stroke="#f3eee3" stroke-width="1"/></g><g transform="translate(136.3 206.3) rotate(-12)">
+        <rect x="-11" y="-4" width="22" height="8" rx="4" fill="#16151d" stroke="#f3eee3" stroke-width="1.1"/>
+        <path d="M-6 -1.5h9M-6 1.5h6" stroke="#f3eee3" stroke-width=".7" opacity=".7"/>
+        <rect x="4" y="-4.5" width="2.4" height="9" fill="#ff5fbe" style="mix-blend-mode:screen"/></g><g transform="translate(116.1 230.1) rotate(-10)">
+        <rect x="-11" y="-4" width="22" height="8" rx="4" fill="#16151d" stroke="#f3eee3" stroke-width="1.1"/>
+        <path d="M-6 -1.5h9M-6 1.5h6" stroke="#f3eee3" stroke-width=".7" opacity=".7"/>
+        <rect x="4" y="-4.5" width="2.4" height="9" fill="#ff5fbe" style="mix-blend-mode:screen"/></g><g transform="translate(96.3 226.2)">
+        <ellipse rx="6.5" ry="4.2" fill="url(#cdark-dg2)" stroke="#f3eee3" stroke-width="1"/>
+        <path d="M-2.4 0h4.8" stroke="#f3eee3" stroke-width="1"/></g><g transform="translate(79.0 231.3) rotate(33)">
+        <rect x="-11" y="-4" width="22" height="8" rx="4" fill="#16151d" stroke="#f3eee3" stroke-width="1.1"/>
+        <path d="M-6 -1.5h9M-6 1.5h6" stroke="#f3eee3" stroke-width=".7" opacity=".7"/>
+        <rect x="4" y="-4.5" width="2.4" height="9" fill="#ff5fbe" style="mix-blend-mode:screen"/></g><g transform="translate(164.0 230.8)">
+        <ellipse rx="6.5" ry="4.2" fill="url(#cdark-dg2)" stroke="#f3eee3" stroke-width="1"/>
+        <path d="M-2.4 0h4.8" stroke="#f3eee3" stroke-width="1"/></g><g transform="translate(155.3 210.8) rotate(1)">
+        <rect x="-11" y="-4" width="22" height="8" rx="4" fill="#16151d" stroke="#f3eee3" stroke-width="1.1"/>
+        <path d="M-6 -1.5h9M-6 1.5h6" stroke="#f3eee3" stroke-width=".7" opacity=".7"/>
+        <rect x="4" y="-4.5" width="2.4" height="9" fill="#ff5fbe" style="mix-blend-mode:screen"/></g><g transform="translate(107.8 218.1) rotate(25)">
+        <rect x="-11" y="-4" width="22" height="8" rx="4" fill="#16151d" stroke="#f3eee3" stroke-width="1.1"/>
+        <path d="M-6 -1.5h9M-6 1.5h6" stroke="#f3eee3" stroke-width=".7" opacity=".7"/>
+        <rect x="4" y="-4.5" width="2.4" height="9" fill="#ff5fbe" style="mix-blend-mode:screen"/></g><g transform="translate(156.8 233.2) rotate(-2)">
+        <rect x="-11" y="-4" width="22" height="8" rx="4" fill="#16151d" stroke="#f3eee3" stroke-width="1.1"/>
+        <path d="M-6 -1.5h9M-6 1.5h6" stroke="#f3eee3" stroke-width=".7" opacity=".7"/>
+        <rect x="4" y="-4.5" width="2.4" height="9" fill="#ff5fbe" style="mix-blend-mode:screen"/></g><g transform="translate(128.5 224.7)">
+        <ellipse rx="6.5" ry="4.2" fill="url(#cdark-dg2)" stroke="#f3eee3" stroke-width="1"/>
+        <path d="M-2.4 0h4.8" stroke="#f3eee3" stroke-width="1"/></g><g transform="translate(101.8 219.5) rotate(-31)">
+        <rect x="-11" y="-4" width="22" height="8" rx="4" fill="#16151d" stroke="#f3eee3" stroke-width="1.1"/>
+        <path d="M-6 -1.5h9M-6 1.5h6" stroke="#f3eee3" stroke-width=".7" opacity=".7"/>
+        <rect x="4" y="-4.5" width="2.4" height="9" fill="#ff5fbe" style="mix-blend-mode:screen"/></g><g transform="translate(157.3 228.3) rotate(-23)">
+        <rect x="-11" y="-4" width="22" height="8" rx="4" fill="#16151d" stroke="#f3eee3" stroke-width="1.1"/>
+        <path d="M-6 -1.5h9M-6 1.5h6" stroke="#f3eee3" stroke-width=".7" opacity=".7"/>
+        <rect x="4" y="-4.5" width="2.4" height="9" fill="#ff5fbe" style="mix-blend-mode:screen"/></g><g transform="translate(151.8 232.2) rotate(-27)">
+        <rect x="-11" y="-4" width="22" height="8" rx="4" fill="#16151d" stroke="#f3eee3" stroke-width="1.1"/>
+        <path d="M-6 -1.5h9M-6 1.5h6" stroke="#f3eee3" stroke-width=".7" opacity=".7"/>
+        <rect x="4" y="-4.5" width="2.4" height="9" fill="#ff5fbe" style="mix-blend-mode:screen"/></g><g transform="translate(95.7 231.5)">
+        <ellipse rx="6.5" ry="4.2" fill="url(#cdark-dg2)" stroke="#f3eee3" stroke-width="1"/>
+        <path d="M-2.4 0h4.8" stroke="#f3eee3" stroke-width="1"/></g><g transform="translate(118.7 221.5) rotate(-10)">
+        <rect x="-11" y="-4" width="22" height="8" rx="4" fill="#16151d" stroke="#f3eee3" stroke-width="1.1"/>
+        <path d="M-6 -1.5h9M-6 1.5h6" stroke="#f3eee3" stroke-width=".7" opacity=".7"/>
+        <rect x="4" y="-4.5" width="2.4" height="9" fill="#ff5fbe" style="mix-blend-mode:screen"/></g><g transform="translate(129.3 231.2) rotate(-6)">
+        <rect x="-11" y="-4" width="22" height="8" rx="4" fill="#16151d" stroke="#f3eee3" stroke-width="1.1"/>
+        <path d="M-6 -1.5h9M-6 1.5h6" stroke="#f3eee3" stroke-width=".7" opacity=".7"/>
+        <rect x="4" y="-4.5" width="2.4" height="9" fill="#ff5fbe" style="mix-blend-mode:screen"/></g><g transform="translate(111.2 226.0)">
         <ellipse rx="6.5" ry="4.2" fill="url(#cdark-dg2)" stroke="#f3eee3" stroke-width="1"/>
         <path d="M-2.4 0h4.8" stroke="#f3eee3" stroke-width="1"/></g></g><g class="g-figure"><g class="g-plate g-green" style="mix-blend-mode:screen">
     <path class="g-ear g-ear-l" d="M84 86 C64 78 38 66 14 50 C32 74 54 95 82 105 Z" fill="url(#cdark-dg)"/>
@@ -67,7 +115,7 @@
     <path class="g-body" d="M84 132 C68 150 64 180 66 212 L174 212 C176 180 172 150 156 132 C146 141 132 145 120 145 C108 145 94 141 84 132 Z" fill="#ff5fbe"/>
     <path d="M117 95 C113 106 114 115 123 119 C129 121 132 114 127 109 C124 105 123 100 122 95 Z" fill="#ff5fbe"/>
     <ellipse cx="96" cy="108" rx="7" ry="4.5" fill="url(#cdark-dp)"/><ellipse cx="146" cy="108" rx="7" ry="4.5" fill="url(#cdark-dp)"/>
-    
+    <rect x="70" y="84" width="12" height="22" rx="5" fill="#ff5fbe"/><rect x="158" y="84" width="12" height="22" rx="5" fill="#ff5fbe"/>
     
   </g><g class="g-plate g-ink">
     <path d="M78 102 C74 68 96 50 120 50 C144 50 166 68 162 102 C160 124 142 135 120 135 C98 135 80 124 78 102 Z" fill="none" stroke="#f3eee3" stroke-width="1.6" filter="url(#cdark-rough)"/>
@@ -80,10 +128,11 @@
         <circle cx="105.6" cy="90.4" r="1.2" fill="#16151d"/><circle cx="138.6" cy="90.4" r="1.2" fill="#16151d"/></g>
       <g class="g-lids"><rect x="93" y="79" width="22" height="0" fill="url(#cdark-dg)"/><rect x="126" y="79" width="22" height="0" fill="url(#cdark-dg)"/></g>
     </g>
-    <path d="M93 72 Q104 66 115 73" fill="none" stroke="#f3eee3" stroke-width="2.4" stroke-linecap="round"/>
-    <path d="M127 73 Q138 65 149 70" fill="none" stroke="#f3eee3" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M93 74 Q104 68 115 75" fill="none" stroke="#f3eee3" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M127 75 Q138 67 149 72" fill="none" stroke="#f3eee3" stroke-width="2.4" stroke-linecap="round"/>
     <path d="M117 95 C113 106 114 115 123 119 C129 121 132 114 127 109" fill="none" stroke="#f3eee3" stroke-width="1.4"/>
-    <g class="g-mouth"><ellipse cx="121" cy="126" rx="6" ry="6" fill="#f3eee3"/></g>
+    <g class="g-mouth"><path d="M100 121 Q121 138 143 119" fill="none" stroke="#f3eee3" stroke-width="2.6" stroke-linecap="round"/>
+         <path d="M126 126 l1.3 5.6 l4 -1 l-0.7 -5.6 z" fill="#16151d" stroke="#f3eee3" stroke-width="1.2" stroke-linejoin="round"/></g>
     <path d="M86 134 C98 146 142 146 154 134" fill="none" stroke="#f3eee3" stroke-width="1.4" opacity=".8"/>
     <path d="M108 146 v14 M132 146 v14" stroke="#f3eee3" stroke-width="1.2"/><circle cx="108" cy="161" r="1.8" fill="#f3eee3"/><circle cx="132" cy="161" r="1.8" fill="#f3eee3"/>
     <g class="g-laptop">
@@ -91,48 +140,54 @@
       <path d="M80 168 L160 168 L166 182 L74 182 Z" fill="#f3eee3"/>
       <path class="g-code" d="M98 154 h14 M98 158 h24 M98 162 h10 M116 162 h16" stroke="#f3eee3" stroke-width="1.3" stroke-linecap="round"/>
     </g>
-    
-    
+    <g fill="none" stroke="#f3eee3" stroke-width="2"><circle cx="104" cy="91" r="13"/><circle cx="137" cy="91" r="13"/><path d="M117 89 q3.5 -3 7 0"/></g>
+    <path d="M76 88 C74 46 166 46 164 88" fill="none" stroke="#f3eee3" stroke-width="3.2"/>
     
   </g></g></g></g>
-
-<text x="318" y="50" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" letter-spacing="1.4" fill="#f3eee3">THE LEFT-FOOT-FORWARD HOARD · THIS WEEK 0 MERGED</text>
+<text x="318" y="50" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" letter-spacing="1.4" fill="#f3eee3">THE DEMO-ORG DEN · DEMO DATA · TREASURY 303 GOLD</text>
 <g font-family="'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif" font-style="italic" font-size="44">
   <text x="319.6" y="96" fill="#ff5fbe" style="mix-blend-mode:screen">Grub, the code goblin</text>
   <text x="318" y="94.5" fill="#f3eee3">Grub, the code goblin</text>
 </g>
 <g transform="translate(318 112)">
-  <rect width="78" height="24" fill="#19c27a"/><text x="39" y="16.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-weight="700" font-size="12" letter-spacing="1" fill="#16151d">LEVEL 1</text>
-  <rect x="88" y="9" width="120" height="6" fill="none" stroke="#f3eee3" stroke-width="1"/><rect x="88" y="9" width="0.0" height="6" fill="#f3eee3"/>
-  <text x="218" y="16.5" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#a6a3b8">0 PRs devoured all-time</text>
+  <rect width="78" height="24" fill="#19c27a"/><text x="39" y="16.5" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-weight="700" font-size="12" letter-spacing="1" fill="#16151d">LEVEL 9</text>
+  <text x="90" y="16.5" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" fill="#f3eee3">78 scrolls hoarded · 1 of 5 rooms built</text>
 </g>
-<g transform="translate(318 150)">
-  <text y="0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-weight="600" font-size="13" fill="#f3eee3">October feast · 0 / 10 merged PRs</text>
-  <rect y="9" width="520" height="14" fill="none" stroke="#f3eee3" stroke-width="1.2"/>
-  <rect y="9" width="0.0" height="14" fill="#ff5fbe"/>
-  <rect y="9" width="0.0" height="14" fill="url(#cdark-dp)" style="mix-blend-mode:screen"/>
+<g transform="translate(318 154)">
+  <text y="0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-weight="600" font-size="13" fill="#f3eee3">Building the Tavern</text>
+  <text y="18" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#a6a3b8">SCROLLS 6/15</text>
+    <rect x="130" y="9" width="390" height="10" fill="none" stroke="#f3eee3" stroke-width="1.1"/>
+    <rect x="130" y="9" width="156.0" height="10" fill="#19c27a"/><text y="33" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#a6a3b8">GOLD 24/120</text>
+    <rect x="130" y="24" width="390" height="10" fill="none" stroke="#f3eee3" stroke-width="1.1"/>
+    <rect x="130" y="24" width="78.0" height="10" fill="#ff5fbe"/>
 </g>
-<text x="318" y="214" font-family="'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif" font-style="italic" font-size="30" fill="#f3eee3">0</text>
-      <text x="318" y="233" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" letter-spacing=".8" fill="#a6a3b8">MERGED · 90D</text>
-<text x="426" y="214" font-family="'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif" font-style="italic" font-size="30" fill="#19c27a">+0</text>
-      <text x="426" y="233" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" letter-spacing=".8" fill="#a6a3b8">LINES ADDED</text>
-<text x="534" y="214" font-family="'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif" font-style="italic" font-size="30" fill="#ff5fbe">−0</text>
-      <text x="534" y="233" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" letter-spacing=".8" fill="#a6a3b8">LINES DELETED</text>
-<text x="642" y="214" font-family="'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif" font-style="italic" font-size="30" fill="#f3eee3">0</text>
-      <text x="642" y="233" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" letter-spacing=".8" fill="#a6a3b8">REVIEWS</text>
-<text x="750" y="214" font-family="'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif" font-style="italic" font-size="30" fill="#f3eee3">0</text>
-      <text x="750" y="233" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" letter-spacing=".8" fill="#a6a3b8">FEEDERS</text>
-<g transform="translate(318 256)"><circle cx="16" cy="16" r="15" fill="none" stroke="#f3eee3" stroke-dasharray="3 3" opacity=".5"/>
-      <text x="40" y="13" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" letter-spacing=".8" fill="#a6a3b8">TOP FEEDER</text>
-      <text x="40" y="28" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" fill="#a6a3b8">up for grabs</text></g>
-<g transform="translate(500 256)"><circle cx="16" cy="16" r="15" fill="none" stroke="#f3eee3" stroke-dasharray="3 3" opacity=".5"/>
-      <text x="40" y="13" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" letter-spacing=".8" fill="#a6a3b8">CLEANUP HERO</text>
-      <text x="40" y="28" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" fill="#a6a3b8">up for grabs</text></g>
-<g transform="translate(682 256)"><circle cx="16" cy="16" r="15" fill="none" stroke="#f3eee3" stroke-dasharray="3 3" opacity=".5"/>
-      <text x="40" y="13" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" letter-spacing=".8" fill="#a6a3b8">REVIEW SAGE</text>
-      <text x="40" y="28" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" fill="#a6a3b8">up for grabs</text></g>
+<text x="318" y="214" font-family="'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif" font-style="italic" font-size="30" fill="#f3eee3">65</text>
+    <text x="318" y="233" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" letter-spacing=".8" fill="#a6a3b8">MERGED · OCT</text>
+<text x="426" y="214" font-family="'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif" font-style="italic" font-size="30" fill="#f3eee3">126</text>
+    <text x="426" y="233" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" letter-spacing=".8" fill="#a6a3b8">REVIEWS</text>
+<text x="534" y="214" font-family="'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif" font-style="italic" font-size="30" fill="#19c27a">13</text>
+    <text x="534" y="233" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" letter-spacing=".8" fill="#a6a3b8">ISSUES SOLVED</text>
+<text x="642" y="214" font-family="'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif" font-style="italic" font-size="30" fill="#f3eee3">125</text>
+    <text x="642" y="233" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" letter-spacing=".8" fill="#a6a3b8">COMMENTS</text>
+<text x="750" y="214" font-family="'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif" font-style="italic" font-size="30" fill="#ff5fbe">1</text>
+    <text x="750" y="233" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" letter-spacing=".8" fill="#a6a3b8">THANKS SENT</text>
+<g transform="translate(318 256)"><clipPath id="av0dark"><circle cx="16" cy="16" r="15"/></clipPath>
+      <circle cx="16" cy="16" r="15" fill="url(#cdark-dg)"/>
+      <circle cx="16" cy="16" r="15" fill="none" stroke="#f3eee3" stroke-width="1.4"/>
+      <text x="40" y="13" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" letter-spacing=".8" fill="#a6a3b8">TOP MERGER · 10 merges</text>
+      <text x="40" y="29" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-weight="600" font-size="13.5" fill="#f3eee3">@ada</text></g>
+<g transform="translate(500 256)"><clipPath id="av1dark"><circle cx="16" cy="16" r="15"/></clipPath>
+      <circle cx="16" cy="16" r="15" fill="url(#cdark-dg)"/>
+      <circle cx="16" cy="16" r="15" fill="none" stroke="#f3eee3" stroke-width="1.4"/>
+      <text x="40" y="13" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" letter-spacing=".8" fill="#a6a3b8">MOST THANKED · 6 golds</text>
+      <text x="40" y="29" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-weight="600" font-size="13.5" fill="#f3eee3">@grace</text></g>
+<g transform="translate(682 256)"><clipPath id="av2dark"><circle cx="16" cy="16" r="15"/></clipPath>
+      <circle cx="16" cy="16" r="15" fill="url(#cdark-dg)"/>
+      <circle cx="16" cy="16" r="15" fill="none" stroke="#f3eee3" stroke-width="1.4"/>
+      <text x="40" y="13" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" letter-spacing=".8" fill="#a6a3b8">TOP REVIEWER · 14 reviews</text>
+      <text x="40" y="29" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-weight="600" font-size="13.5" fill="#f3eee3">@ken</text></g>
 <line x1="24" y1="303" x2="856" y2="303" stroke="#f3eee3" stroke-width="1" opacity=".35"/>
-<text x="26" y="322" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#f3eee3">The hoard is empty. Merge something tasty.</text>
-<text x="854" y="322" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#a6a3b8">cheered 1× by 1 person · play ↗</text>
+<text x="26" y="322" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#f3eee3">This week: 1 of 3 quests done · next: Leave 30 comments helping e…</text>
+<text x="854" y="322" text-anchor="end" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#a6a3b8">@linus thanked @grace · 6 gold</text>
 <rect width="880" height="340" filter="url(#cdark-grain)" fill="#f3eee3"/>
 </svg>

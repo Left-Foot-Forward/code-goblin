@@ -1,0 +1,29 @@
+name: Thank a teammate
+description: Send gold from your purse to someone who helped. It appears on the thanks wall.
+title: "goblin: thanks"
+labels: [goblin]
+body:
+  - type: markdown
+    attributes:
+      value: Gold comes from your real work in the org. Your note is public. The goblin replies and closes this issue within a few minutes.
+  - type: input
+    id: to
+    attributes:
+      label: Teammate
+      description: Their GitHub username
+      placeholder: "@octocat"
+    validations:
+      required: true
+  - type: input
+    id: gold
+    attributes:
+      label: Gold
+      description: A whole number, up to 100
+      placeholder: "5"
+    validations:
+      required: true
+  - type: textarea
+    id: note
+    attributes:
+      label: What for?
+      description: Up to 280 characters. Public.

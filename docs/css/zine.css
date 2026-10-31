@@ -213,6 +213,59 @@ footer{margin-top:26px;padding-top:12px;border-top:1px solid var(--rule);font-fa
   .shout{grid-template-columns:1fr}
   .you .stats{grid-template-columns:repeat(2,1fr)}
 }
+/* ---------- the Den (realm viewer) ---------- */
+.side-col{display:grid;gap:20px;align-content:start}
+.card{border:1.5px solid var(--ink);background:var(--paper);position:relative}
+.card.wide{margin-top:22px}
+.card .sec:first-child{padding-top:14px}
+.card .tabs{border-top:1px solid var(--rule)}
+.realm .stage{min-height:620px}
+.realm .gob{cursor:default;min-height:360px}
+.building{padding:0 24px 22px;display:grid;gap:10px}
+.row{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.row b{font-size:17px}
+.need{display:grid;grid-template-columns:150px 1fr;gap:10px;align-items:center;font-family:var(--mono);font-size:12.5px}
+.spend{padding:4px 0 6px}
+.mini{display:grid;grid-template-columns:1fr 1fr;gap:10px 12px;padding:4px 14px 10px}
+.mini label{display:grid;gap:4px;font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+.mini .full{grid-column:1/-1}
+.mini input,.mini select{font-family:var(--sans);font-size:15px;text-transform:none;letter-spacing:0;padding:8px 10px;min-height:40px;border:1.5px solid var(--ink);background:var(--paper);color:var(--ink);width:100%}
+.mini button{justify-content:center}
+.stats-line{padding:0 14px 8px;font-size:14.5px}
+.quests{list-style:none;display:grid;gap:12px;padding:4px 14px 6px}
+.quests li{display:grid;gap:5px}
+.quests li span{font-size:14.5px;font-weight:600}
+.quests li small{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.quests li.done span::before{content:'✓ ';color:var(--green-text)}
+.earn{width:calc(100% - 28px);margin:4px 14px 6px;border-collapse:collapse;font-size:14.5px}
+.earn th{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;text-align:left;padding:8px 10px;border-bottom:1.5px solid var(--ink)}
+.earn td{padding:9px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
+.earn td:last-child{font-family:var(--mono);font-size:13px}
+.boards .content{max-height:none;min-height:240px}
+.feed,.wall{list-style:none;padding:6px 14px 14px;display:grid;gap:0}
+.feed li,.wall li{display:flex;justify-content:space-between;gap:14px;align-items:baseline;padding:10px 0;border-bottom:1px solid var(--rule);font-size:14.5px;flex-wrap:wrap}
+.feed li span{flex:1 1 320px;min-width:0}
+.feed time,.wall time{font-family:var(--mono);font-size:12px;color:var(--muted);white-space:nowrap}
+.wall.compact{padding:4px 0 0}
+.wall.compact li{padding:6px 0}
+q{display:block;font-family:var(--serif);font-style:italic;font-size:18px;margin-top:4px;flex-basis:100%;quotes:"“" "”"}
+.diff{font-family:var(--mono);font-size:12.5px;color:var(--green-text)}
+.diff .del{color:var(--pink-text)}
+.tag{font-family:var(--mono);font-size:11px;font-weight:700;background:var(--green-fill);color:var(--on-green);padding:1px 6px;border-radius:999px}
+.k-room span b,.k-quest span b{color:var(--green-text)}
+.rooms{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;padding:10px 14px 14px}
+.rooms li{border:1.5px dashed var(--ink);padding:12px;display:grid;gap:8px;align-content:start}
+.rooms li b{font-family:var(--serif);font-style:italic;font-weight:400;font-size:24px;line-height:1}
+.rooms li span{font-size:14px;color:var(--muted)}
+.rooms li.built{border-style:solid;background:radial-gradient(var(--green) 1px,transparent 1.2px) 0 0/5px 5px}
+.rooms li.built small{font-family:var(--mono);font-size:12px;color:var(--green-text);font-weight:700}
+.rooms li.now{border-style:solid;box-shadow:4px 4px 0 var(--pink-mark)}
+.rooms .need{grid-template-columns:110px 1fr}
+@media (max-width:900px){
+  .realm .stage{min-height:0}
+  .mini{grid-template-columns:1fr}
+  .need{grid-template-columns:120px 1fr}
+}
 /* People who ask for more contrast get flat, solid print: no grain, no misregistration, no halftone. */
 @media (prefers-contrast:more){
   :root{--muted:var(--ink);--rule:var(--ink)}

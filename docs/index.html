@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Hoard · the code goblin</title>
-<meta name="description" content="A clicker game fed by your organisation's merged pull requests.">
+<title>Hoard · the goblin's Den</title>
+<meta name="description" content="A game your organisation plays by working together on GitHub.">
 <meta name="color-scheme" content="light dark">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,80 +12,81 @@
 <link rel="stylesheet" href="css/zine.css">
 </head>
 <body>
-<a class="sr" href="#gob">Skip to the goblin</a>
+<a class="sr" href="#main">Skip to the Den</a>
 <div class="wrap">
   <header class="mast">
     <h1 data-t="Hoard">Hoard</h1>
-    <p class="dek" id="dek">Meet <em>Grub</em>, the code goblin. Every pull request your org merges is a meal.</p>
+    <p class="dek" id="dek">A game your organisation plays by working together on GitHub.</p>
     <div class="side">
-      <span class="kicker" id="issue">Issue no. 1</span>
-      <a class="btn" id="cheerTop" href="#" target="_blank" rel="noopener">Cheer on GitHub <span aria-hidden="true">↗</span><span class="sr"> (opens GitHub)</span></a>
+      <span class="kicker" id="issue">The Den</span>
+      <a class="btn" id="ledgerLink" href="#" target="_blank" rel="noopener">The ledger <span aria-hidden="true">↗</span><span class="sr"> (opens GitHub)</span></a>
     </div>
   </header>
-  <p class="demo" id="demo" hidden>Demo data. Run the <b>Feast</b> workflow in this repo to feed the goblin your org's real pull requests.</p>
+  <p class="demo" id="demo" hidden>Demo data. Once the Goblin workflow runs in this repo, this page shows your org's real teamwork.</p>
+  <p class="demo" id="empty" hidden>The goblin hasn't run yet. Run the <b>Goblin</b> workflow in this repo's Actions tab and the Den opens.</p>
 
-  <section class="howto" id="howto" aria-labelledby="howtoTitle">
+  <section class="howto" aria-labelledby="howtoTitle">
     <h2 class="sr" id="howtoTitle">How Hoard works</h2>
     <ol>
-      <li><span class="num" aria-hidden="true">1</span><b>Your org ships.</b><span id="how1">Every pull request your org merges turns into a scroll here, a few hours later.</span></li>
-      <li><span class="num" aria-hidden="true">2</span><b>You feed the goblin.</b><span>Tap Grub to write code, hire a crew, and feed scrolls for big rewards. Deleted lines become gold.</span></li>
-      <li><span class="num" aria-hidden="true">3</span><b>Everyone grows together.</b><span>The more the whole org merges, the higher Grub's level and the bigger the bonus every player gets.</span></li>
+      <li><span class="num" aria-hidden="true">1</span><b>Do real work.</b><span id="how1">Merge, review, comment and resolve issues. The goblin pays whoever did it, every couple of hours.</span></li>
+      <li><span class="num" aria-hidden="true">2</span><b>Spend it on GitHub.</b><span>Thank a teammate, put a bounty on a stubborn issue, or fund a room. Each is a short form on GitHub.</span></li>
+      <li><span class="num" aria-hidden="true">3</span><b>Build the Den together.</b><span>Every room the team finishes unlocks something real: weekly quests, matched thanks, retrospectives, a Hall of Fame.</span></li>
     </ol>
-    <button class="btn" id="howtoClose">Got it</button>
   </section>
 
-  <section class="org" aria-label="Organisation progress">
-    <span class="lvl" id="orgLvl">LEVEL 1</span>
-    <div class="goal"><span id="goalTxt">This month's feast</span><div class="bar" role="progressbar" aria-labelledby="goalTxt" aria-valuemin="0" aria-valuemax="100" id="goalBar"><i></i></div></div>
-    <div class="bonus"><b id="bonusN">×1.0</b>org bonus on everything you earn<small id="bonusWhy"></small></div>
-  </section>
-
-  <main>
-    <section class="stage" aria-label="The goblin">
+  <main id="main" class="realm">
+    <section class="stage" aria-label="The goblin and its Den">
       <div class="count">
-        <div class="n" id="lines">0</div>
-        <div class="u"><span><b id="lps">0</b> lines/s</span><span><b id="perTap">1</b> per tap</span><span class="gold"><b id="gold">0</b> gold</span></div>
+        <div class="n" id="treasury">0 gold</div>
+        <div class="u"><span>in the shared treasury</span><span><b id="treasuryScrolls">0</b> scrolls</span><span><b id="lvl">LEVEL 1</b></span><span><b id="scrollsAll">0</b> scrolls hoarded all-time</span></div>
       </div>
-      <button class="me-pill linkish" id="mePill" hidden></button>
-      <div class="buffs" id="buffs" aria-live="polite"></div>
-      <div class="gob" id="gob" tabindex="0" role="button" aria-label="Grub the goblin. Press Space or Enter to write code."></div>
-      <p class="hint" id="hint" aria-hidden="true">Tap Grub to write code</p>
-      <div class="build">
-        <div class="row"><span id="buildName">BUILD #1</span><span id="buildState">compiling…</span></div>
-        <div class="bar green" role="progressbar" aria-labelledby="buildName" aria-valuemin="0" aria-valuemax="100" id="buildBarWrap"><i id="buildBar"></i></div>
-      </div>
-      <div class="tray" id="tray" role="group" aria-label="Scrolls ready to feed"></div>
-      <div class="conflict" id="conflict" hidden role="dialog" aria-labelledby="conflictTitle">
-        <span class="kicker" id="conflictTitle">Merge conflict!</span>
-        <p>Pick a side for a reward. Esc to walk away.</p>
-        <pre id="conflictCode"></pre>
-        <div class="opts">
-          <button class="btn" data-pick="ours">Keep ours · 7× lines/s</button>
-          <button class="btn" data-pick="theirs">Keep theirs · 25× taps</button>
-          <button class="btn solid" data-pick="both">Keep both · lines + gold</button>
-        </div>
-        <div class="tick" id="conflictTick"></div>
-      </div>
+      <div class="gob" id="gob" role="img" aria-label="The goblin in its Den"></div>
+      <div class="building" id="building"></div>
     </section>
 
-    <section class="panel" aria-label="Shop and guild">
-      <div class="tabs" id="tabs" role="tablist" aria-label="Panels">
-        <button role="tab" id="tab-crew" data-tab="crew" aria-controls="content">Crew<i class="dot"></i></button>
-        <button role="tab" id="tab-upgrades" data-tab="upgrades" aria-controls="content">Upgrades<i class="dot"></i></button>
-        <button role="tab" id="tab-feast" data-tab="feast" aria-controls="content">Feast<i class="dot"></i></button>
-        <button role="tab" id="tab-guild" data-tab="guild" aria-controls="content">Guild<i class="dot"></i></button>
-        <button role="tab" id="tab-vault" data-tab="vault" aria-controls="content">Vault<i class="dot"></i></button>
-        <button role="tab" id="tab-badges" data-tab="badges" aria-controls="content">Badges<i class="dot"></i></button>
-      </div>
-      <div class="buybar" id="buybar" role="group" aria-label="How many to hire"><span aria-hidden="true">HIRE</span><button data-amt="1">1</button><button data-amt="10">10</button><button data-amt="100">100</button><button data-amt="max">MAX</button></div>
-      <div class="content" id="content" role="tabpanel" tabindex="0"></div>
-    </section>
+    <aside class="side-col">
+      <section class="card" aria-labelledby="spendTitle">
+        <h2 class="sec" id="spendTitle">Spend your gold</h2>
+        <div class="tabs" role="tablist" aria-label="Ways to spend" id="spendTabs">
+          <button role="tab" id="st-thanks" data-tab="thanks" aria-controls="spendPanel">Thank</button>
+          <button role="tab" id="st-bounty" data-tab="bounty" aria-controls="spendPanel">Bounty</button>
+          <button role="tab" id="st-fund" data-tab="fund" aria-controls="spendPanel">Fund a room</button>
+        </div>
+        <div id="spendPanel" role="tabpanel" class="spend"></div>
+      </section>
+      <section class="card" aria-labelledby="weekTitle">
+        <h2 class="sec" id="weekTitle">This week</h2>
+        <div id="week"></div>
+      </section>
+    </aside>
   </main>
 
-  <footer><span id="foot">Hoard · a goblin that eats merged pull requests</span>
-    <span><button class="linkish" id="howtoOpen">How it works</button> · <a href="#" id="srcLink" target="_blank" rel="noopener">Source</a> · <button class="linkish" id="sound" aria-pressed="false">Sound</button></span></footer>
+  <section class="card wide" aria-labelledby="purseTitle">
+    <h2 class="sec" id="purseTitle">Your purse</h2>
+    <div class="pickme"><label for="whoami">I am</label><select id="whoami"><option value="">pick your GitHub name…</option></select>
+      <span class="note" style="padding:0">Just for viewing, saved in this browser. Spending always happens on GitHub as you.</span></div>
+    <div id="purse"></div>
+  </section>
+
+  <section class="card wide" aria-labelledby="earnTitle">
+    <h2 class="sec" id="earnTitle">How to earn</h2>
+    <div id="earn"></div>
+  </section>
+
+  <section class="card wide boards" aria-label="Boards">
+    <div class="tabs" role="tablist" aria-label="Boards" id="boardTabs">
+      <button role="tab" id="bt-feed" data-tab="feed" aria-controls="board">Activity</button>
+      <button role="tab" id="bt-people" data-tab="people" aria-controls="board">People</button>
+      <button role="tab" id="bt-thanks" data-tab="thanks" aria-controls="board">Thanks wall</button>
+      <button role="tab" id="bt-bounties" data-tab="bounties" aria-controls="board">Bounties</button>
+      <button role="tab" id="bt-rooms" data-tab="rooms" aria-controls="board">The Den</button>
+      <button role="tab" id="bt-teams" data-tab="teams" aria-controls="board">Teams and repos</button>
+    </div>
+    <div id="board" role="tabpanel" tabindex="0" class="content"></div>
+  </section>
+
+  <footer><span id="foot">Hoard · a goblin fed by teamwork</span><span><a href="#" id="srcLink" target="_blank" rel="noopener">Source</a></span></footer>
 </div>
-<div class="toasts" id="toasts" role="status" aria-live="polite"></div>
-<script type="module" src="js/game.js"></script>
+<script type="module" src="js/realm.js"></script>
 </body>
 </html>
