@@ -21,7 +21,7 @@ export function cardAlt(hoard, moves) {
     + (wk ? ` This week: ${wk.merged} merged.` : '')
     + (hoard.teamOfMonth ? ` Team of the month: ${hoard.teamOfMonth}.` : '')
     + (people.length ? ` Shout-outs: ${people.join(', ')}.` : '')
-    + (moves?.total ? ` Cheered ${moves.total} times.` : '');
+    + (moves?.total ? ` Cheered ${moves.total === 1 ? 'once' : `${moves.total} times`}.` : '');
 }
 
 export function renderCard(hoard, moves, avatars = {}, theme = 'light', playUrl = '') {
