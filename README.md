@@ -1,10 +1,10 @@
 <!-- goblin:links -->
-<picture>
+<a href="https://left-foot-forward.github.io/code-goblin/"><picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/card-dark.svg">
-  <img alt="The org's code goblin: its level, this month's merge goal and shout-outs. Updates after the first Feast run." src="docs/card.svg" width="100%">
-</picture>
+  <img alt="Grub, the Left-Foot-Forward code goblin, is level 1. October: 0 of 10 merged pull requests. This week: 0 merged. Cheered 1 times." src="docs/card.svg" width="100%">
+</picture></a>
 
-**▶ Play the game** · Feed · Pet · Cheer (links appear after the first Feast run)
+**[▶ Play the game](https://left-foot-forward.github.io/code-goblin/)** · [Feed](https://github.com/Left-Foot-Forward/code-goblin/issues/new?title=goblin%3A%20feed&body=Submitting%20this%20issue%20tells%20the%20goblin.%20A%20bot%20will%20reply%20and%20close%20it.) · [Pet](https://github.com/Left-Foot-Forward/code-goblin/issues/new?title=goblin%3A%20pet&body=Submitting%20this%20issue%20tells%20the%20goblin.%20A%20bot%20will%20reply%20and%20close%20it.) · [Cheer](https://github.com/Left-Foot-Forward/code-goblin/issues/new?title=goblin%3A%20cheer&body=Submitting%20this%20issue%20tells%20the%20goblin.%20A%20bot%20will%20reply%20and%20close%20it.)
 <!-- /goblin:links -->
 
 # Hoard
