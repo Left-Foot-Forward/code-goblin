@@ -1,0 +1,2 @@
+{"txid":"treasury:41150850283.1","type":"treasury","at":"2026-10-31T00:34:01Z","gold":20,"scrolls":0,"reason":"work"}
+{"txid":"activity:41150850283.1:2026-W44","type":"activity","at":"2026-10-30T23:49:22Z","week":"2026-W44","counts":{"newRepos":1},"repos":{},"teams":{},"people":{},"items":[{"at":"2026-10-30T23:49:22Z","kind":"repo","repo":"code-goblin"}]}
