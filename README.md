@@ -1,7 +1,7 @@
 <!-- goblin:links -->
 <a href="https://left-foot-forward.github.io/code-goblin/"><picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/card-dark.svg">
-  <img alt="Grub, the Left-Foot-Forward code goblin, is level 1 with 0 scrolls hoarded and 20 gold in the treasury. The team is building the Library: 0 of 20 scrolls and 0 of 60 gold. October so far: 0 merged, 0 reviews, 0 issues resolved." src="docs/card.svg" width="100%">
+  <img alt="Grub, the Left-Foot-Forward code goblin, is level 1 with 0 scrolls hoarded and 20 gold in the treasury. The team is building the Library: 0 of 20 scrolls and 0 of 60 gold. November so far: 0 merged, 0 reviews, 0 issues resolved." src="docs/card.svg" width="100%">
 </picture></a>
 
 **[▶ Visit the Den](https://left-foot-forward.github.io/code-goblin/)** · [Thank a teammate](https://github.com/Left-Foot-Forward/code-goblin/issues/new?template=thanks.yml) · [Post a bounty](https://github.com/Left-Foot-Forward/code-goblin/issues/new?template=bounty.yml) · [Fund a room](https://github.com/Left-Foot-Forward/code-goblin/issues/new?template=fund.yml) · [Cheer](https://github.com/Left-Foot-Forward/code-goblin/issues/new?title=goblin%3A%20cheer&body=Submitting%20this%20issue%20tells%20the%20goblin.%20A%20bot%20will%20reply%20and%20close%20it.)

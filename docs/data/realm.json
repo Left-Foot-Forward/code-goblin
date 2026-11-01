@@ -4,7 +4,7 @@
  "name": "Grub",
  "repo": "Left-Foot-Forward/code-goblin",
  "demo": false,
- "generatedAt": "2026-10-31T23:25:27Z",
+ "generatedAt": "2026-11-01T06:12:47Z",
  "level": 1,
  "levelProgress": 0,
  "scrollsAll": 0,
@@ -89,13 +89,13 @@
  "quests": [],
  "week": "2026-W44",
  "month": {
-  "key": "2026-10",
-  "label": "October",
+  "key": "2026-11",
+  "label": "November",
   "merges": 0,
   "reviews": 0,
   "comments": 0,
   "issues": 0,
-  "newRepos": 1
+  "newRepos": 0
  },
  "thisWeek": {
   "merges": 0,
