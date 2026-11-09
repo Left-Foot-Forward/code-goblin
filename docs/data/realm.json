@@ -4,7 +4,7 @@
  "name": "Grub",
  "repo": "Left-Foot-Forward/code-goblin",
  "demo": false,
- "generatedAt": "2026-11-08T22:10:33Z",
+ "generatedAt": "2026-11-09T01:45:03Z",
  "level": 1,
  "levelProgress": 0,
  "scrollsAll": 0,
@@ -87,7 +87,7 @@
  ],
  "current": "library",
  "quests": [],
- "week": "2026-W45",
+ "week": "2026-W46",
  "month": {
   "key": "2026-11",
   "label": "November",
@@ -111,13 +111,6 @@
   "resolver": null
  },
  "weeks": [
-  {
-   "week": "2026-W33",
-   "merges": 0,
-   "reviews": 0,
-   "comments": 0,
-   "issues": 0
-  },
   {
    "week": "2026-W34",
    "merges": 0,
@@ -197,6 +190,13 @@
   },
   {
    "week": "2026-W45",
+   "merges": 0,
+   "reviews": 0,
+   "comments": 0,
+   "issues": 0
+  },
+  {
+   "week": "2026-W46",
    "merges": 0,
    "reviews": 0,
    "comments": 0,
